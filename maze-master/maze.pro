@@ -10,6 +10,7 @@ TEMPLATE = app
 DEFINES += QT_DEPRECATED_WARNINGS
 
 SOURCES += \
+    form.cpp \
     main.cpp \
     mainwindow.cpp \
     unionfind.cpp \
@@ -27,6 +28,7 @@ SOURCES += \
     astar.cpp
 
 HEADERS += \
+    form.h \
     mainwindow.h \
     unionfind.h \
     mazewidget.h \
@@ -44,8 +46,13 @@ HEADERS += \
     mutable_priority_queue.h
 
 FORMS += \
+    form.ui \
     mainwindow.ui \
     visualizationdialog.ui
 
 DISTFILES += \
+    1.jpg \
     README.md
+
+RESOURCES += \
+    resources.qrc
